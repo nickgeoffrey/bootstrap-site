@@ -1,0 +1,368 @@
+/* TYPOGRAPHY */
+
+body {
+
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif;  
+} 
+
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.card-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.display-4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.display-3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.display-2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.display-1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 8rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+
+/* HEX SHADES
+
+#00c2ff
+#00aadf
+#0092bf
+#00799f
+#006180
+#004960
+#003140
+#001820 
+
+HEX COMPLIMENTARY
+
+#00c2ff
+#ff3d00
+
+*/
+
+
+/* NAVIGATION */
+
+.navbar {
+    background-color: #00C2FF;
+}
+
+
+.custom-toggle {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: none; 
+}
+
+.navbar-toggler-icon {
+
+}
+
+#search-button {
+    background-color: #00C2FF;
+    border: none;
+    padding: 0px;
+}
+
+.search-icon {
+    font-size: 38px;
+    color: #fff;
+}
+
+.form-inline {
+    width: 16rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#navbarCollapse {
+    
+    }
+
+#navbarCollapse ul li a {
+    color: #fff;
+    text-align: left;
+    padding-left: 1rem;
+    width: 16rem;
+}
+
+.navbar-brand {
+    padding: 0rem;
+    color: #00C2FF;
+}
+
+/* PAGE TITLES */
+
+.page-title {
+    margin-top: 5rem;
+    margin-left: 1.8rem;
+    padding-left: 0rem;
+    margin-bottom: 2rem;
+}
+
+.action-getinvolved {
+    margin-top: -4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    text-align: center;
+    background-color: #ff3d00;
+    z-index: 99;
+    border-radius: 1rem;
+    
+}
+
+.action-getinvolved h1 {
+}
+
+.action-getinvolved a {
+   background-color: #ff3d00; 
+}
+
+.larger-button {
+    font-size: 2rem;
+    float: right;
+    background-color: #ff3d00;
+}
+
+.mobile-signup-button {
+    display: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.1rem;
+    background-color: #ff3d00;
+}
+
+.homepage-cover {
+    width: 100vw;
+    height: 100vw;
+    background-color: #F13C20;
+    margin-bottom: 1rem;
+    
+}
+
+.homepage-title {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+/* SECTIONS */
+
+.footer-wrapper {
+    background-color: #00C2FF;
+}
+
+.home-get-involved {
+    z-index: 99;
+}
+
+.home-about-us {
+    background-color: #F2F3F4;
+}
+
+/* CARDS */
+
+.event {
+    background-color: aliceblue;
+    border: none;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px; 
+}
+
+.event-cards .card {
+    max-width: 700px;
+    min-height: 250px;
+}
+
+.event-cards .card:hover {
+    background-color: cornflowerblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-columns {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-columns .card {
+    background-color: aliceblue;
+    border-style: none;
+}
+
+.review-title {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.card-title {
+    padding-top: 1rem
+}
+
+.card-body {
+    padding-top: 0rem;
+}
+
+.card-deck {
+    margin-bottom: 2rem;
+}
+
+#event-date-marker {
+    text-align: right;
+    padding-top: 0rem;
+    color: #fff;
+}
+
+#event-date-marker .card-title {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+}
+
+#event-date-marker p {
+    font-size: 1.6rem;
+    margin-top: -0.8rem;
+}
+
+/* SLIDERS */
+
+#carouselExampleSlidesOnly {
+    margin-bottom: 2rem;
+    z-index: -99;
+}
+
+
+/* JUMBOTRONS */
+
+.jumbotron {
+    margin-bottom: 2rem;
+}
+
+.jumbotron .btn {
+    background-color: #ff3d00;
+}
+
+/* FOOTER */
+
+.footer-wrapper .container {
+    height: 10rem;
+
+}
+
+.footer-wrap ul li {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+    background-color: #00C2FF;
+}
+
+.footer-wrap ul li:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+.footer-wrap p {
+    text-align: center;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.footer-list li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+#myBtn {
+  position: relative;
+  float: right;
+  bottom: 1rem;;
+  right: 1rem;
+  z-index: 99;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #ff3d00;;
+  cursor: pointer;
+  padding: 0px;
+}
+
+#myBtn:hover {
+  color: #666;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease-out; 
+          transition: all 0.3s ease-out; 
+}
+
+
+@media screen and (max-width: 992px) { 
+    .larger-button {
+    display: none;
+    }
+    .mobile-signup-button {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-brand h6 {
+        font-size: 1.3rem;
+    }
+}
