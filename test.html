@@ -192,123 +192,178 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     --> 
+ <style>
+  @media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+</style>  
     
    <body> 
     
     
     <main>
   
-<input type="checkbox" class="form-check-input" value="">I have read and understood the <a href="/">Terms &amp; Conditions</a>        
-        
-        
-<!-- Button trigger modal -->
-<button type="button" class="terms-link" data-toggle="modal" data-target="#exampleModalCenter">Terms &amp; Conditions</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<div class="container-fluid">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+    <div class="carousel-inner row w-100 mx-auto">
+      
+        
+      <div class="carousel-item col-md-4 active">  
+        <div class="card">
+          <img src="images/event-card-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Songwriting Workshop</h3>
+            <p class="card-text text-muted">13 March 2020 &middot; Venue &middot; $10</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="/songwriting-workshop.html" class="btn btn-primary">Tickets</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper quis lectus nulla at volutpat diam ut venenatis. Placerat duis ultricies lacus sed. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Lectus quam id leo in. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Laoreet suspendisse interdum consectetur libero. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Mi proin sed libero enim sed faucibus turpis in. Pellentesque nec nam aliquam sem et tortor consequat id porta. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Ultrices in iaculis nunc sed augue lacus. Eu consequat ac felis donec et.
+        
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img src="images/event-card-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Songwriting Workshop</h3>
+            <p class="card-text text-muted">13 March 2020 &middot; Venue &middot; $10</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="/songwriting-workshop.html" class="btn btn-primary">Tickets</a>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img src="images/event-card-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Songwriting Workshop</h3>
+            <p class="card-text text-muted">13 March 2020 &middot; Venue &middot; $10</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="/songwriting-workshop.html" class="btn btn-primary">Tickets</a>
+          </div>
+        </div>
       </div>
+        
+      <div class="carousel-item col-md-4">
+        <div class="card">
+          <img src="images/event-card-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">Songwriting Workshop</h3>
+            <p class="card-text text-muted">13 March 2020 &middot; Venue &middot; $10</p>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="/songwriting-workshop.html" class="btn btn-primary">Tickets</a>
+          </div>
+        </div>
+      </div>
+        
     </div>
+      
+      
+      
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-</div>   
+</div>        
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <!------------------- CONTACT ERROR --------------------->        
-    
-    <div class="splashimage2"> 
-        <div class="bumper"></div>
-            <div class="contactoutcome">
-                <h1>WHOOPS !</h1>
-                <p>LOOKS LIKE THERE WAS AN ERROR</p>               
-                <div class="tryagainbutton">
-                    <a href="contact.html">TRY AGAIN</a>
-                </div>
-            </div>
-	</div>
-        
-     <!------------------- CONTACT THANKS --------------------->   
-        
-    <div class="splashimage2">
-        <div class="bumper"></div>
-            <div class="contactoutcome">
-                <h1>SUCCESS !</h1>
-                <p>YOUR MESSAGE HAS BEEN SENT</p>
-                <div class="homepagebutton">
-                    <a href="index.html">HOME</a>
-                </div>
-        </div>
-    </div>   
-        
+ <script>       
+   $(document).ready(function() {
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
 
-    <h1>Hello World</h1>
-    <h2>Hello World</h2>
-    <h3>Hello World</h3>
-    <h4>Hello World</h4>
-    <h5>Hello World</h5>
-    <h6>Hello World</h6>
-    <p>Hello World</p>
-    <small>Hello World</small>
-    
-    <a src="images/logo-white.png"></a>
-    
-<div class="container">    
-    <div class="row row-cols-1 row-cols-lg-2">
-      <div class="col mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>    
- 
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
+      </script>      
+        
+        
+        
+        
+        
     <script>
     $(':radio').change(function() {
     console.log('New star rating: ' + this.value);

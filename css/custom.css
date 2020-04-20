@@ -121,6 +121,11 @@ p {
 
 /* ====================== SECTIONS ====================== */
 
+.index-title {
+    width: 70vw;
+    margin: 1rem auto 3rem auto;
+}
+
 .index-blurb {
     max-width: 32rem;
     padding-top: 2rem;
@@ -139,7 +144,7 @@ p {
 
 .index-volunteer {
     background-color: #3D7997;
-    padding: 4rem;
+    padding: 5rem;
 }
 
 .index-volunteer .btn {
@@ -155,6 +160,7 @@ p {
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
+    min-height: 15rem;
 }
 
 .index-review .carousel {
@@ -378,11 +384,12 @@ p {
     width: 100vw;
     bottom: 0;
     left: 0;
+    padding-top: 1rem;
 }
 
 .footer-wrapper .list-group {
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -401,7 +408,12 @@ p {
 .footer-right {
     margin-right: auto;
     margin-top: 1rem;
+    margin-left: 1rem;
     text-align: left;
+}
+
+.footer-right .footer-logo {
+    width: 10rem;
 }
 
 .footer-right .footer-copy {
