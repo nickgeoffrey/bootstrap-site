@@ -16,7 +16,7 @@ body {
     padding-top: 0rem;
     padding-bottom: 0rem;
     color: #fff;
-    background-color: #8BBBCC;
+    background-color: #1E3C4C;
     text-align: center;
 }
 
@@ -121,10 +121,6 @@ p {
 }
 
 
-/* ====================== PAGE TITLES ====================== */
-
-
-
 /* ====================== SECTIONS ====================== */
 
 .index-head {
@@ -208,18 +204,6 @@ p {
     padding: 2rem;
 }
 
-.about-us-text {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  z-index: 99;
-  background-color: rgba(17, 17, 17, 0.5);
-  border-radius: 0.3rem;
-}
-
-.about-cards {
-  padding-top: 2rem;
-}
-
 .text-container {
     max-width: 60rem;
     margin-left: auto;
@@ -238,9 +222,16 @@ p {
     text-align: justify;
 }
 
-.success-container {
-    height: 63vh;
-    padding-top: 10rem;
+.about-us-text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  z-index: 99;
+  background-color: rgba(17, 17, 17, 0.5);
+  border-radius: 0.3rem;
+}
+
+.about-cards {
+  padding-top: 2rem;
 }
 
 .events-container {
@@ -251,7 +242,10 @@ p {
     background-color: #EFEFEF;
 }
 
-
+.success-container {
+    height: 63vh;
+    padding-top: 10rem;
+}
 
 /* ====================== FORMS ====================== */
 
@@ -512,10 +506,10 @@ p {
 /* =================== RESPONSIVE SCREEN SIZES ========== */
 
 @media screen and (max-width: 992px) { 
-   .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item {
+  .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item {
     text-align: right;
     padding-right: 1rem;
-} 
+  } 
 }
 
 @media (min-width: 40em) {
