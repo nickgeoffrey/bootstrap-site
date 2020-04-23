@@ -13,6 +13,7 @@ main {
 body {
     font-family: 'Inter', sans-serif;
     font-family: 'Open Sans', sans-serif;
+/*    font-family: 'Roboto Slab', serif;*/
     padding-top: 0rem;
     padding-bottom: 0rem;
     color: #fff;
@@ -76,15 +77,15 @@ p {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #EB6C40;
+    color: #FE5000;
 }
 
 .navbar-dark .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");   
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-dark .navbar-toggler .navbar-toggler-icon:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235,108,64,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254,80,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler.navbar-toggler {
@@ -112,7 +113,7 @@ p {
 
 .dropdown-menu .dropdown-item:hover {
     background-color: #1E3C4C;
-    color: #EB6C40;
+    color: #FE5000;
 }
 
 .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item {
@@ -140,12 +141,13 @@ p {
 }
 
 .index-events {
-    background-color: #EB6C40;
+    background-color: #C1B9AE;
     padding: 2rem 2rem 4rem 2rem;
 }
 
 .index-events h1 {
     margin-bottom: 2rem;
+  color: #fff;
 }
 
 .index-volunteer {
@@ -166,7 +168,6 @@ p {
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    min-height: 15rem;
 }
 
 .index-review .carousel {
@@ -200,7 +201,7 @@ p {
 
 .about-container {
     color: #fff;
-    background-color: #111;
+    background-color: #0F1E26;
     padding: 2rem;
 }
 
@@ -223,8 +224,6 @@ p {
 }
 
 .about-us-text {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   z-index: 99;
   background-color: rgba(17, 17, 17, 0.5);
   border-radius: 0.3rem;
@@ -245,6 +244,28 @@ p {
 .success-container {
     height: 63vh;
     padding-top: 10rem;
+}
+
+.student-hero {
+  background-image: url(/images/sign-up-student.jpg);
+  background-color: #111111;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.volunteer-hero {
+  background-image: url(/images/sign-up-volunteer.jpg);
+  background-color: #111111;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding-top: 2rem;
 }
 
 /* ====================== FORMS ====================== */
@@ -304,18 +325,18 @@ p {
     content: '★ ';
 }
 .rate > input:checked ~ label {
-    color: #EB6C40;    
+    color: #FE5000;    
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #EB6C40;  
+    color: #FE5000;  
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #EB6C40;
+    color: #FE5000;
 }
 
 #exampleModalCenter {
@@ -326,12 +347,18 @@ p {
 .terms-link {
     background-color: rgba(0, 0, 0, 0.0);
     border: none;
-    color: #EB6C40;
+    color: #FE5000;
     padding: 0;
 }
 
 .terms-link:hover {
     text-decoration: underline;
+}
+
+.sign-up-form {
+  background-color: rgba(17, 17, 17, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem
 }
 
 
@@ -353,6 +380,7 @@ p {
 /* ====================== CARDS ====================== */
 
 .card {
+    min-width: 21.5rem;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -362,21 +390,22 @@ p {
 }
 
 .col {
-    margin-top: 1rem;
+    margin-top: 0.4rem;
 }
 
 
 /* ====================== BUTTONS ====================== */
 
 .btn-primary {
-    background-color: #EB6C40;
+/*    background-color: #EB6C40;*/
+    background-color: #FF5000;
     border: none;
     width: 10rem;
     border-radius: 1rem;
 }
 
 .btn-primary:hover {
-    background-color: #FF4500;
+    background-color: #BF3C00;
 }
 
 
@@ -510,6 +539,14 @@ p {
     text-align: right;
     padding-right: 1rem;
   } 
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 40em) {
